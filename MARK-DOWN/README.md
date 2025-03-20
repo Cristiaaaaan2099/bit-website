@@ -4,5 +4,5 @@
   *En este proyecto me dare un poco a conocer*
 ---
 ### . AUTOR
-    *Cristian Arley Acero Sierra
+*Cristian Arley Acero Sierra*
     
