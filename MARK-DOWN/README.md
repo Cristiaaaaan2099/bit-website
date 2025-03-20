@@ -1,8 +1,8 @@
-# . MI PROYECTO DE VIDA
+#  MI PROYECTO DE VIDA
 ---
-## . DESCRIPCION DEL PROYECTO
+##  DESCRIPCION DEL PROYECTO
   *En este proyecto me dare un poco a conocer*
 ---
-### . AUTOR
+###  AUTOR
 *Cristian Arley Acero Sierra*
     
