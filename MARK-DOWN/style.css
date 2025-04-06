@@ -1,0 +1,157 @@
+body{
+background: linear-gradient(to left,rgba(189, 95, 19, 0.89), rgba(18, 18, 19, 0.486))
+}
+/*HTML MUSICA EDICION*/
+.contacto{
+    font-family: 'Times New Roman', Times, serif;
+}
+.titulo{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.anuel{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 35px;
+}
+.brr{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-size: 25px;
+display: flex;
+text-align: center;
+justify-content: center;
+
+}
+.lnk{
+    text-align: left;
+    font-size: 25px;
+    padding-right:15px ;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-style: groove;
+   justify-content: right;
+}
+.anuel{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 40px;
+}
+.adv{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.vdv{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+ 
+} 
+.adv{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    
+}
+.tlte{
+    display: flex;
+    text-align: center;
+    justify-content: center; 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 55px;
+}
+.iframe{
+    display: flex;
+    text-align: center;
+    justify-content: center; 
+}
+.msn{
+    display: flex;
+    text-align: center;
+    justify-content: center; 
+    }
+/* INDEX HTML MODIFICACION*/
+.letra{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+.ind{
+    font-size: 55px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    
+}
+
+    
+
+.frr{
+    display: flex;
+    text-align: center;
+    justify-content: center; 
+    font-size: 30px;
+    
+}
+.mrv{
+    display: flex;
+}
+.efdo{
+    display: flex;
+    }
+.com{
+    display: flex;
+}
+.acm{
+    position: relative; left: 520px;
+}
+.space{
+    line-height: 40px;
+    margin-bottom: 20px;
+}
+.lob{
+    display: flex;
+    text-align: left;
+    justify-content: left; 
+    position: relative; top: -200px;
+    
+
+}
+.redes{
+    display: flex;
+    text-align: center;
+    justify-content: center; 
+    flex-direction: column;
+
+}
+.mod{
+    writing-mode: horizontal-tb;
+    justify-content: center;
+    text-align: center;
+    }
+
+.mov{
+    
+
+}    
+
+
+.pgg{
+    margin-left: 1720px;
+    margin-top: -300px;
+}
+    
+
+/*CONTACTO HTML MODIFICACION*/
+.let{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.lh{
+    position: relative; left: 1720px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+}
+.tra{
+    display: flex;
+    margin: 40px;
+    border: 30px;
+}
+
