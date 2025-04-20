@@ -1,157 +1,1774 @@
 body{
-background: linear-gradient(to left,rgba(189, 95, 19, 0.89), rgba(18, 18, 19, 0.486))
+background: linear-gradient(to left,rgba(12, 12, 12, 0.973), rgb(218, 21, 21));
 }
+
+
+
 /*HTML MUSICA EDICION*/
-.contacto{
-    font-family: 'Times New Roman', Times, serif;
-}
-.titulo{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+:root {
+    --primary-color: #e4dcdcb6; 
+    --secondary-color: #13121294;
 }
 
-.anuel{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+.cu-musica{
+    
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border: 0;
+    width: px;
+    height: 0%;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 80px;
+    gap: 20px;
+    display: grid;
+    margin: auto;
+    grid-template-columns:auto auto auto auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    'lnk tlt tlt tlt'
+    'main main aside aside'
+    'artistasfavoritos artistasfavoritos artistasfavoritos artistasfavoritos'
+    
+    'artista1 artista1 discografiaAnuel discografiaAnuel'
+    'redes redes redes redes';
+}
+
+.tlt{
+    grid-area: tlt;
+    border-radius: 10px;
+    border: 0px;
+    text-align: center;
+    background-color:#13121294;
+    color: var(--primary-color);
+    height: 80px;
+    padding-top: 20px;
     font-size: 35px;
-}
-.brr{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-font-size: 25px;
-display: flex;
-text-align: center;
-justify-content: center;
+    }
 
+    
+
+
+main{
+    grid-area: main;
+    border: 0px;
+    border-radius: 10px;
+    padding: 3px;
+    background-color:var(--secondary-color);
+    color: var(--primary-color);
+    text-align: center;
+    font-size: 20PX;
+   
+}
+aside{
+    grid-area: aside;
+    border: 0px;
+    border-radius: 10px;
+    padding: 5px;
+    text-align: center;
+    background-color:var(--secondary-color);
+    color: var(--primary-color);
+}
+
+
+button{
+    background-color:var(--primary-color);
+    border-radius: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+    padding: 5px;
+    background-color: var(--secondary-color);
+    border: 0px;
+    }
+.borrar{
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 22px;
 }
 .lnk{
-    text-align: left;
-    font-size: 25px;
-    padding-right:15px ;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    border-style: groove;
-   justify-content: right;
-}
-.anuel{
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    font-size: 40px;
-}
-.adv{
-    display: flex;
-    text-align: center;
-    justify-content: center;
-}
-.vdv{
-    display: flex;
-    text-align: center;
-    justify-content: center;
- 
-} 
-.adv{
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    
-}
-.tlte{
-    display: flex;
-    text-align: center;
-    justify-content: center; 
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 55px;
-}
-.iframe{
-    display: flex;
-    text-align: center;
-    justify-content: center; 
-}
-.msn{
-    display: flex;
-    text-align: center;
-    justify-content: center; 
-    }
-/* INDEX HTML MODIFICACION*/
-.letra{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    
-}
-.ind{
-    font-size: 55px;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    
-}
-
-    
-
-.frr{
-    display: flex;
-    text-align: center;
-    justify-content: center; 
-    font-size: 30px;
-    
-}
-.mrv{
-    display: flex;
-}
-.efdo{
-    display: flex;
-    }
-.com{
-    display: flex;
-}
-.acm{
-    position: relative; left: 520px;
-}
-.space{
-    line-height: 40px;
-    margin-bottom: 20px;
-}
-.lob{
-    display: flex;
-    text-align: left;
-    justify-content: left; 
-    position: relative; top: -200px;
-    
-
-}
-.redes{
-    display: flex;
-    text-align: center;
-    justify-content: center; 
-    flex-direction: column;
-
-}
-.mod{
-    writing-mode: horizontal-tb;
-    justify-content: center;
-    text-align: center;
-    }
-
-.mov{
-    
-
+    display: grid;
+    font-size: 20px;
+    height: 6px;
+    padding: 20px
 }    
 
+.artistasfavoritos{
+    grid-area: artistasfavoritos;
+    text-align: center;
+    border-radius: 10px;
+    border: 0px;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    height: 80px;
+    padding-top: 20px;
+    font-size: 35px;
+}
 
-.pgg{
-    margin-left: 1720px;
-    margin-top: -300px;
+.artista1{
+    grid-area: artista1;
+    text-align: center;
+    border: 0px;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border-radius: 10px;
+}
+
+.discografiaAnuel{
+    grid-area: discografiaAnuel;
+    text-align: justify;
+    border: 0px;
+    background-color: var(--secondary-color);
+    color: var(--primary-color) ;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+video{
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.texto{
+grid-area: texto; 
+font-size: 25px;
+text-align: center;
+}
+
+.razones{
+    text-align: center;
+    padding: 20px;
+}
+
+.redes{
+grid-area: redes;
+text-align: center;
+border: 0px;
+background-color: var(--secondary-color);
+color: var(--primary-color);
+border-radius: 10px;
+}
+.tenor-gif-embed{
+    text-align: center;
+}
+.meex{
+    text-align: center;
+}
+/*mobile fisrt*/
+/*musica html*/
+@media screen and (max-width:576px) {
+    .cu-musica{
+         margin: 0;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        padding: 20px 2px;
+        background-size: 1200px;
+        border: 0;
+        width: 576px;
+        height: 0%;
+        margin-top: 0;
+        margin-left: auto;
+        margin-right: auto;
+        gap: 20px;
+        display: grid;
+        margin: auto;
+        grid-template-columns:auto auto auto auto;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        'lnk tlt tlt tlt'
+        'main main main main'
+        'aside aside aside aside'
+        'artistasfavoritos artistasfavoritos artistasfavoritos artistasfavoritos'
+        'artista1 artista1 artista1 artista1'
+        'discografiaAnuel discografiaAnuel discografiaAnuel discografiaAnuel'
+        'redes redes redes redes';
+    }
+}
+@media screen and (max-width:576px) { 
+    .tlt{
+        grid-area: tlt;
+        border-radius: 10px;
+        border: 0px;
+        text-align: center;
+        background-color:#13121294;
+        color: var(--primary-color);
+        height: 80px;
+        padding-top: 20px;
+        font-size: 35px;
+        width: 500px;
+        }
+}
+
+@media screen and (max-width:576px) {    
+    main{
+        grid-area: main;
+        border: 0px;
+        border-radius: 10px;
+        padding: 2px 10px;
+        background-color:var(--secondary-color);
+        color: var(--primary-color);
+        text-align: center;
+        font-size: 20PX;
+        width: 450px;
+        
+
+    }  
+    }
+    @media screen and (max-width:576px) {
+        video{
+            padding: 40px;
+            border-radius: 20px;
+            width: 600px;
+        }
+    }
+    @media screen and (max-width:576px) {
+    aside{
+        grid-area: aside;
+        border: 0px;
+        border-radius: 10px;
+        padding: 5px;
+        text-align: center;
+        background-color:var(--secondary-color);
+        color: var(--primary-color);
+        width: 669px;
+    }
+    }
+
+    @media screen and (max-width:576px) {
+    button{
+        background-color:var(--primary-color);
+        border-radius: 20px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 15px;
+        padding: 5px;
+        background-color: var(--secondary-color);
+        border: 0px;
+        }
+    }
+    
+    @media screen and (max-width:576px) {
+    .borrar{
+        text-decoration: none;
+        color: var(--primary-color);
+        font-size: 22px;
+    }
+}
+@media screen and (max-width:576px) {
+    .lnk{
+        display: grid;
+        font-size: 20px;
+        height: 6px;
+        padding: 20px;
+        
+    }  
+}  
+@media screen and (max-width:576px) { 
+    .artistasfavoritos{
+        grid-area: artistasfavoritos;
+        text-align: center;
+        border-radius: 10px;
+        border: 0px;
+        background-color: var(--secondary-color);
+        color: var(--primary-color);
+        height: 80px;
+        padding-top: 20px;
+        font-size: 35px;
+        width: 680px;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .artista1{
+        grid-area: artista1;
+        text-align: center;
+        border: 0px;
+        background-color: var(--secondary-color);
+        color: var(--primary-color);
+        border-radius: 10px;
+        width: 679px;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .discografiaAnuel{
+        grid-area: discografiaAnuel;
+        text-align: justify;
+        border: 0px;
+        background-color: var(--secondary-color);
+        color: var(--primary-color) ;
+        padding: 5px;
+        border-radius: 10px;
+        width: 660;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .texto{
+    grid-area: texto; 
+    font-size: 25px;
+    text-align: center;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .razones{
+        text-align: center;
+        padding: 20px;
+    }
+}
+@media screen and (max-width:576px) {   
+    .redes{
+    grid-area: redes;
+    text-align: center;
+    border: 0px;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border-radius: 10px;
+    }
+}
+@media screen and (max-width:576px) {    
+    .tenor-gif-embed{
+        text-align: center;
+    }
+}
+@media screen and (max-width:576px) {    
+    .meex{
+        text-align: center;
+    }
+}    
+/*768*/
+@media screen and (max-width:768px) {
+    .cu-musica{
+   
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        padding: 2px 10px;
+        background-size: 1400px;
+        border: 0;
+        width: 768px;
+        height: 0%;
+        margin-top: 0;
+        gap: 20px;
+        display: grid;
+        margin: auto;
+        grid-template-columns:auto auto auto auto;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        'lnk tlt tlt tlt'
+        'main main main main'
+        'aside aside aside aside'
+        'artistasfavoritos artistasfavoritos artistasfavoritos artistasfavoritos'
+        'artista1 artista1 artista1 artista1'
+        'discografiaAnuel discografiaAnuel discografiaAnuel discografiaAnuel'
+        'redes redes redes redes';
+    }
+}
+@media screen and (max-width:768px) { 
+    .tlt{
+        grid-area: tlt;
+        border-radius: 10px;
+        border: 0px;
+        text-align: center;
+        background-color:#13121294;
+        color: var(--primary-color);
+        height: 80px;
+        padding-top: 20px;
+        font-size: 40px;
+        width: 550px;
+        }
+}
+
+@media screen and (max-width:768px) {    
+    main{
+        grid-area: main;
+        border: 0px;
+        border-radius: 10px;
+        
+        background-color:var(--secondary-color);
+        color: var(--primary-color);
+        text-align: center;
+        font-size: 28PX;
+        width: 740px;
+        
+
+    }  
+    }
+    @media screen and (max-width:768px) {
+        video{
+            padding: 40px;
+            border-radius: 20px;
+            width: 680px;
+        }
+    }
+    @media screen and (max-width:768px) {
+    aside{
+        grid-area: aside;
+        border: 0px;
+        border-radius: 10px;
+        padding: 5px;
+        text-align: center;
+        background-color:var(--secondary-color);
+        color: var(--primary-color);
+        width: 740px;
+        font-size: 25px;
+    }
+    }
+
+    @media screen and (max-width:768px) {
+    button{
+        background-color:var(--primary-color);
+        border-radius: 20px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 15px;
+        padding: 5px;
+        background-color: var(--secondary-color);
+        border: 0px;
+        }
+    }
+    
+    @media screen and (max-width:768px) {
+    .borrar{
+        text-decoration: none;
+        color: var(--primary-color);
+        font-size: 22px;
+    }
+}
+@media screen and (max-width:768px) {
+    .lnk{
+        display: grid;
+        font-size: 20px;
+        height: 6px;
+        padding: 20px;
+        
+    }  
+}  
+@media screen and (max-width:768px) { 
+    .artistasfavoritos{
+        grid-area: artistasfavoritos;
+        text-align: center;
+        border-radius: 10px;
+        border: 0px;
+        background-color: var(--secondary-color);
+        color: var(--primary-color);
+        height: 80px;
+        padding-top: 20px;
+        font-size: 35px;
+        width: 730px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .artista1{
+        grid-area: artista1;
+        text-align: center;
+        border: 0px;
+        background-color: var(--secondary-color);
+        color: var(--primary-color);
+        border-radius: 10px;
+        width: 730px;
+        font-size: 28px;
+    }
+}
+@media screen and (max-width:768px) {
+    .gifanuel{
+        width: 600px;
+    }
+}
+@media screen and (max-width:768px) {
+    .discografiaAnuel{
+        grid-area: discografiaAnuel;
+        text-align: justify;
+        border: 0px;
+        background-color: var(--secondary-color);
+        color: var(--primary-color) ;
+        padding: 5px;
+        border-radius: 10px;
+        width: 720px;
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .texto{
+    grid-area: texto; 
+    font-size: 25px;
+    text-align: center;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .razones{
+        text-align: center;
+        padding: 20px;
+    }
+}
+@media screen and (max-width:768px) {   
+    .redes{
+    grid-area: redes;
+    text-align: center;
+    border: 0px;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border-radius: 10px;
+    width: 730px;
+
+    }
+}
+@media screen and (max-width:768px) {    
+    .tenor-gif-embed{
+        text-align: center;
+    }
+}
+@media screen and (max-width:768px) {    
+    .meex{
+        text-align: center;
+        width: 550px;
+    }
+}    
+/*992*/
+
+@media screen and (max-width:992px) {
+    .cu-musica{
+   
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        padding: 2px 10px;
+        background-size: 2000px;
+        border: 0;
+        width: 992px;
+        height: 0%;
+        margin-top: 0;
+        gap: 20px;
+        display: grid;
+        margin: auto;
+        grid-template-columns:auto auto auto auto;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        'lnk tlt tlt tlt'
+        'main main main main'
+        'aside aside aside aside'
+        'artistasfavoritos artistasfavoritos artistasfavoritos artistasfavoritos'
+        'artista1 artista1 artista1 artista1'
+        'discografiaAnuel discografiaAnuel discografiaAnuel discografiaAnuel'
+        'redes redes redes redes';
+    }
+}
+@media screen and (max-width:992px) { 
+    .tlt{
+        grid-area: tlt;
+        border-radius: 10px;
+        border: 0px;
+        text-align: center;
+        background-color:#13121294;
+        color: var(--primary-color);
+        height: 80px;
+        padding-top: 20px;
+        font-size: 35px;
+        width: 750px;
+        }
+}
+
+@media screen and (max-width:992px) {    
+    main{
+        grid-area: main;
+        border: 0px;
+        border-radius: 10px;
+        background-color:var(--secondary-color);
+        color: var(--primary-color);
+        text-align: center;
+        font-size: 28PX;
+        width: 950px;
+        }  
+    }
+    @media screen and (max-width:992px) {
+        video{
+            padding: 40px;
+            border-radius: 20px;
+            width: 780px;
+        }
+    }
+    @media screen and (max-width:992px) {
+    aside{
+        grid-area: aside;
+        border: 0px;
+        border-radius: 10px;
+        padding: 5px;
+        text-align: center;
+        background-color:var(--secondary-color);
+        color: var(--primary-color);
+        width: 950px;
+        font-size: 25px;
+    }
+    }
+
+    @media screen and (max-width:992px) {
+    button{
+        background-color:var(--primary-color);
+        border-radius: 20px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 15px;
+        padding: 5px;
+        background-color: var(--secondary-color);
+        border: 0px;
+        }
+    }
+    
+    @media screen and (max-width:992px) {
+    .borrar{
+        text-decoration: none;
+        color: var(--primary-color);
+        font-size: 22px;
+    }
+}
+@media screen and (max-width:992px) {
+    .lnk{
+        display: grid;
+        font-size: 20px;
+        height: 6px;
+        padding: 20px;
+        
+    }  
+}  
+@media screen and (max-width:992px) { 
+    .artistasfavoritos{
+        grid-area: artistasfavoritos;
+        text-align: center;
+        border-radius: 10px;
+        border: 0px;
+        background-color: var(--secondary-color);
+        color: var(--primary-color);
+        height: 80px;
+        padding-top: 20px;
+        font-size: 35px;
+        width: 960px;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .artista1{
+        grid-area: artista1;
+        text-align: center;
+        border: 0px;
+        background-color: var(--secondary-color);
+        color: var(--primary-color);
+        border-radius: 10px;
+        width: 960px;
+        font-size: 28px;
+    }
+}
+@media screen and (max-width:992px) {
+    .gifanuel{
+        width: 600px;
+    }
+}
+@media screen and (max-width:992px) {
+    .discografiaAnuel{
+        grid-area: discografiaAnuel;
+        text-align: justify;
+        border: 0px;
+        background-color: var(--secondary-color);
+        color: var(--primary-color) ;
+        padding: 5px;
+        border-radius: 10px;
+        width: 950px;
+        font-size: 25px;
+    }
+}
+@media screen and (max-width:992px) {
+.aa{
+text-align: center;
+}
+}
+@media screen and (max-width:992px) {
+    .texto{
+    grid-area: texto; 
+    font-size: 25px;
+    text-align: center;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .razones{
+        text-align: center;
+        padding: 20px;
+    }
+}
+@media screen and (max-width:992px) {   
+    .redes{
+    grid-area: redes;
+    text-align: center;
+    border: 0px;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border-radius: 10px;
+    width: 960px;
+
+    }
+}
+@media screen and (max-width:992px) {    
+    .tenor-gif-embed{
+        text-align: center;
+    }
+}
+@media screen and (max-width:992px) {    
+    .meex{
+        text-align: center;
+        width: 650px;
+    }
+}    
+
+/*HTML PRINCIPAL EDICIÓN*/
+
+.cuerpo{
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border: 0px;
+    width: px;
+    height: 0%;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 80px;
+    gap: 20px;
+    display: grid;
+    margin: auto;
+    grid-template-columns:auto auto auto auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+    'bt el-cr el-cr el-cr'
+    'fra fra fra fra'
+    'nav nav nav nav'
+    'sobre-mi sobre-mi sobre-mi obj'
+    'equipo equipo equipo equipo'
+    'comida comida cr7 cr7'
+    'redes2 redes2 redes2 redes2'
+}
+
+.el-cr{
+    grid-area: el-cr;
+    text-align: center;
+    border: 0px;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border-radius: 15px;
+    height: 65px;
+    
+}
+.bt{
+    display: grid;
+    font-size: 20px;
+    height: 6px;
+    padding: 22px;
+}
+.contac{
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 22px;
+    
+    
+}
+
+.fra{
+    grid-area: fra;
+    text-align: center;
+    border: 0px;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border-radius: 15px;
+    height: 65px;
+}
+nav{
+    grid-area: nav;
+    display: flex;
+    padding: 20px;
+    border: 0px;
+    background-color: var(--secondary-color);
+    text-decoration: none;
+    justify-content: space-between;
+    cursor: pointer;
+    transition:  text-shadow 0.2s ;
+    border-radius: 15px;
+    
+}
+.sobre-mi{
+    grid-area: sobre-mi;
+    border: 0px;
+    text-align: justify;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border-radius: 15px;
+    padding: 20px;
+}
+.obj{
+    grid-area: obj;
+    border: 0px;
+    text-align: justify;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border-radius: 15px;
+    padding: 20px;
+}
+.equipo{
+    grid-area: equipo;
+    border: 0px;
+    text-align: justify;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border-radius: 15px;
+    padding: 20px;
+}
+.galacticos{
+    text-align: center;
+    
+}
+
+
+.comida{
+    grid-area: comida;
+    border: 0px;
+    text-align: justify;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border-radius: 15px;
+    padding: 20px;
+}
+.cr7{
+    grid-area: cr7;
+    border: 0px;
+    text-align: justify;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border-radius: 15px;
+    padding: 20px;
+}
+.redes2{
+    grid-area: redes2;
+    border: 0px;
+    text-align: center;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border-radius: 15px;
+}
+
+
+
+.quit{
+    text-decoration: none;
+    color: var(--primary-color);
+    text-shadow: 0 0 4px var(--primary-color), 0 0 8px var(--primary-color);
+}
+
+/*mobile first*/
+/*576*/
+@media screen and (max-width:576px) { 
+.cuerpo{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+    background-size: 1200px;
+    padding: 2px 10px;
+    
+    display: grid;
+    grid-template-columns:auto auto auto auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+    'bt el-cr el-cr el-cr'
+    'fra fra fra fra'
+    'nav nav nav nav'
+    'sobre-mi sobre-mi sobre-mi sobre-mi'
+    'obj obj obj obj'
+    'equipo equipo equipo equipo'
+    'comida comida comida comida'
+    'cr7 cr7 cr7 cr7'
+    'redes2 redes2 redes2 redes2'
+}    
+}
+@media screen and (max-width:576px) { 
+.el-cr{
+    grid-area: el-cr;
+    text-align: center;
+    border: 0px;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border-radius: 15px;
+    font-size: 25px;
+    width: 490px;
+}    
+}
+@media screen and (max-width:576px) { 
+.bt{
+    display: grid;
+    font-size: 20px;
+    height: 6px;
+    
+    width: 100px;
+}
+}
+@media screen and (max-width:576px) { 
+.contac{
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 15px;
+    
+}    
+}
+@media screen and (max-width:576px) { 
+.fra{
+    grid-area: fra;
+    text-align: center;
+    border: 0px;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border-radius: 15px;
+    width: 660px;
+
+}
+}
+@media screen and (max-width:576px) { 
+nav{
+    grid-area: nav;
+    display: flex;
+    
+    border: 0px;
+    background-color: var(--secondary-color);
+    text-decoration: none;
+    justify-content: space-between;
+    cursor: pointer;
+    transition:  text-shadow 0.2s ;
+    border-radius: 15px;
+    width: 620px;
+}    
+}
+@media screen and (max-width:576px) { 
+.sobre-mi{
+    grid-area: sobre-mi;
+    border: 0px;
+    text-align: justify;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border-radius: 15px;
+    
+    width: 620px;
+}
+}
+@media screen and (max-width:576px) { 
+.obj{
+    grid-area: obj;
+    border: 0px;
+    text-align: justify;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border-radius: 15px;
+    
+    width: 620px;
+}
+}
+@media screen and (max-width:576px) {
+    .foto{
+        width:500px;
+    }
+}
+@media screen and (max-width:576px) { 
+.equipo{
+    grid-area: equipo;
+    border: 0px;
+    text-align: justify;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border-radius: 15px;
+    width: 620px;
+    }
+}
+@media screen and (max-width:576px) { 
+.vini{
+width: 10px;
 }
     
+}
 
-/*CONTACTO HTML MODIFICACION*/
-.let{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+@media screen and (max-width:576px) { 
+.comida{
+    grid-area: comida;
+    border: 0px;
+    text-align: justify;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border-radius: 15px;
+    padding:0;
+    width: 660px;
+}    
 }
-.lh{
-    position: relative; left: 1720px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 16px;
+@media screen and (max-width:576px) {
+    .salchipapa{
+        width: 200px;
+    }
 }
-.tra{
+@media screen and (max-width:576px) { 
+.cr7{
+    grid-area: cr7;
+    border: 0px;
+    text-align: justify;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border-radius: 15px;
+    width: 620px;
+    
+}
+}
+@media screen and (max-width:576px) { 
+.redes2{
+    grid-area: redes2;
+    border: 0px;
+    text-align: center;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border-radius: 15px;
+    width: 660px;
+}
+}
+@media screen and (max-width:576px) { 
+    .mod{
+        display: flex;
+        width: 2px;
+        text-align: center;
+    }
+}
+/*768*/
+@media screen and (max-width:768px) { 
+    .cuerpo{
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        padding: 2px 2px;
+        background-size: 1200px;
+        width: 768px;
+        gap: 20px;
+        display: grid;
+        margin: auto;
+        grid-template-columns:auto auto auto auto;
+        grid-template-rows: auto;
+        grid-template-areas:
+        'bt el-cr el-cr el-cr'
+        'fra fra fra fra'
+        'nav nav nav nav'
+        'sobre-mi sobre-mi sobre-mi sobre-mi'
+        'obj obj obj obj'
+        'equipo equipo equipo equipo'
+        'comida comida comida comida'
+        'cr7 cr7 cr7 cr7'
+        'redes2 redes2 redes2 redes2'
+    }    
+    }
+    @media screen and (max-width:768px) { 
+    .el-cr{
+        grid-area: el-cr;
+        text-align: center;
+        border: 0px;
+        background-color: var(--secondary-color);
+        color: var(--primary-color);
+        border-radius: 15px;
+        font-size: 25px;
+        width: 450px;
+    }    
+    }
+    @media screen and (max-width:768px) { 
+    .bt{
+        display: grid;
+        font-size: 20px;
+        height: 6px;
+        width: 100px;
+    }
+    }
+    @media screen and (max-width:768px) { 
+    .contac{
+        color: var(--primary-color);
+        text-decoration: none;
+        font-size: 15px;
+        
+    }    
+    }
+    @media screen and (max-width:768px) { 
+    .fra{
+        grid-area: fra;
+        text-align: center;
+        border: 0px;
+        background-color: var(--secondary-color);
+        color: var(--primary-color);
+        border-radius: 15px;
+        width: 650px;
+    
+    }
+    }
+    @media screen and (max-width:768px) { 
+    nav{
+        grid-area: nav;
+        display: flex;
+        
+        border: 0px;
+        background-color: var(--secondary-color);
+        text-decoration: none;
+        justify-content: space-between;
+        cursor: pointer;
+        transition:  text-shadow 0.2s ;
+        border-radius: 15px;
+        width: 610px;
+    }    
+    }
+    @media screen and (max-width:768px) { 
+    .sobre-mi{
+        grid-area: sobre-mi;
+        border: 0px;
+        text-align: justify;
+        background-color: var(--secondary-color);
+        color: var(--primary-color);
+        border-radius: 15px;
+        
+        width: 610px;
+    }
+    }
+    @media screen and (max-width:768px) { 
+    .obj{
+        grid-area: obj;
+        border: 0px;
+        text-align: justify;
+        background-color: var(--secondary-color);
+        color: var(--primary-color);
+        border-radius: 15px;
+        
+        width: 610px;
+    }
+    }
+    @media screen and (max-width:768px) {
+        .foto{
+            width:500px;
+        }
+    }
+    @media screen and (max-width:768px) { 
+    .equipo{
+        grid-area: equipo;
+        border: 0px;
+        text-align: justify;
+        background-color: var(--secondary-color);
+        color: var(--primary-color);
+        border-radius: 15px;
+        width: 610px;
+        }
+    }
+    @media screen and (max-width:768px) { 
+    .galacticos{
+        text-align: center;
+        width: 630px;
+        
+    }
+    }
+    @media screen and (max-width:768px) { 
+    .comida{
+        grid-area: comida;
+        border: 0px;
+        text-align: justify;
+        background-color: var(--secondary-color);
+        color: var(--primary-color);
+        border-radius: 15px;
+        padding:0;
+        width: 650px;
+        
+    }
+    }
+    @media screen and (max-width:768px) { 
+    .cr7{
+        grid-area: cr7;
+        border: 0px;
+        text-align: justify;
+        background-color: var(--secondary-color);
+        color: var(--primary-color);
+        border-radius: 15px;
+        width: 610px;
+        
+    }
+    }
+    @media screen and (max-width:768px) { 
+    .redes2{
+        grid-area: redes2;
+        border: 0px;
+        text-align: center;
+        background-color: var(--secondary-color);
+        color: var(--primary-color);
+        border-radius: 15px;
+        width: 650px;
+    }
+    }
+/*992*/
+@media screen and (max-width:992px) { 
+    .cuerpo{
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        padding: 2px 20px;
+        background-size: 2500px;
+        width: 992px;
+        gap: 20px;
+        display: grid;
+        margin: auto;
+        grid-template-columns:auto auto auto auto;
+        grid-template-rows: auto;
+        grid-template-areas:
+        'bt el-cr el-cr el-cr'
+        'fra fra fra fra'
+        'nav nav nav nav'
+        'sobre-mi sobre-mi sobre-mi sobre-mi'
+        'obj obj obj obj'
+        'equipo equipo equipo equipo'
+        'comida comida comida comida'
+        'cr7 cr7 cr7 cr7'
+        'redes2 redes2 redes2 redes2'
+    }    
+    }
+    @media screen and (max-width:992px) { 
+    .el-cr{
+        grid-area: el-cr;
+        text-align: center;
+        border: 0px;
+        background-color: var(--secondary-color);
+        color: var(--primary-color);
+        border-radius: 15px;
+        font-size: 22px;
+        width: 790px;
+        
+    }    
+    }
+    @media screen and (max-width:992px) { 
+    .bt{
+        display: grid;
+        font-size: 20px;
+        height: 6px;
+        width: 100px;
+    }
+    }
+    @media screen and (max-width:992px) { 
+    .contac{
+        color: var(--primary-color);
+        text-decoration: none;
+        font-size: 15px;
+        
+    }    
+    }
+    @media screen and (max-width:992px) { 
+    .fra{
+        grid-area: fra;
+        text-align: center;
+        border: 0px;
+        background-color: var(--secondary-color);
+        color: var(--primary-color);
+        border-radius: 15px;
+        width: 965px;
+    
+    }
+    }
+    @media screen and (max-width:992px) { 
+    nav{
+        grid-area: nav;
+        display: flex;
+        
+        border: 0px;
+        background-color: var(--secondary-color);
+        text-decoration: none;
+        justify-content: space-between;
+        cursor: pointer;
+        transition:  text-shadow 0.2s ;
+        border-radius: 15px;
+        width: 925px;
+    }    
+    }
+    @media screen and (max-width:992px) { 
+    .sobre-mi{
+        grid-area: sobre-mi;
+        border: 0px;
+        text-align: justify;
+        background-color: var(--secondary-color);
+        color: var(--primary-color);
+        border-radius: 15px;
+        width: 925px;
+    }
+    }
+    @media screen and (max-width:992px) { 
+    .obj{
+        grid-area: obj;
+        border: 0px;
+        text-align: justify;
+        background-color: var(--secondary-color);
+        color: var(--primary-color);
+        border-radius: 15px;
+        width: 925px;
+    }
+    }
+    @media screen and (max-width:992px) {
+        .foto{
+            width:700px;
+            text-align: center;
+        }
+    }
+    @media screen and (max-width:992px) { 
+    .equipo{
+        grid-area: equipo;
+        border: 0px;
+        text-align: justify;
+        background-color: var(--secondary-color);
+        color: var(--primary-color);
+        border-radius: 15px;
+        width: 925px;
+        }
+    }
+    @media screen and (max-width:992px) { 
+    .vini{
+        text-align: center;
+        width: 700px;
+        
+    }
+    }
+    @media screen and (max-width:992px) { 
+    .comida{
+        grid-area: comida;
+        border: 0px;
+        text-align: justify;
+        background-color: var(--secondary-color);
+        color: var(--primary-color);
+        border-radius: 15px;
+        padding:0;
+        width: 965px;
+        font-size: 22px;
+        
+    }
+    }
+    @media screen and (max-width:992px) { 
+    .cr7{
+        grid-area: cr7;
+        border: 0px;
+        text-align: justify;
+        background-color: var(--secondary-color);
+        color: var(--primary-color);
+        border-radius: 15px;
+        width: 925px;
+        font-size: 22px;
+        
+    }
+    }
+    @media screen and (max-width:992px) { 
+    .redes2{
+        grid-area: redes2;
+        border: 0px;
+        text-align: center;
+        background-color: var(--secondary-color);
+        color: var(--primary-color);
+        border-radius: 15px;
+        width: 965px;
+    }
+    }    
+
+/*CONTACTO EDICION*/
+.contacto{
+margin: 0;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+border: px solid black;
+width: px;
+height: 0%;
+margin-top: 0;
+margin-left: 200px;
+margin-right: 200px;
+padding: 80px;
+gap: 20px;
+display: grid;
+margin: auto;
+grid-template-columns:auto auto auto  auto;
+grid-template-rows: auto;
+grid-template-areas:'lk info info info'
+'serv serv serv serv'
+'lista lista lista lista'
+'datos datos datos datos'
+'fto fto fto fto'
+}
+.info{
+    
+    grid-area: info;
+    background-color: var(--secondary-color);
+    text-align: justify;
+    color: var(--primary-color);
+}
+.lk{
+    
+    display: grid;
+    grid-area: lk;
+    font-size: 20px;
+    height: 6px;
+    padding: 22px;
+}
+.bra{
+    
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 22px;
+}
+.dec{
+    
+    border-radius: 15px;
+    border: none;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    cursor: pointer;
+    width: 150px;
+    height: 50px;
+}
+.serv{
+    
+    grid-area: serv;
+    text-align: center;
+    background-color: var(--secondary-color);
+    border-radius: 15px;
+    color: var(--primary-color);
+}
+.lista{
+    
+    grid-area: lista;
+    color: var(--primary-color);
+}
+
+.datos{
+    
+    grid-area: datos;
+    text-align: center;
+    border-radius: 15px;
+    height: 100%;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    
+}
+.marg{
+    
     display: flex;
-    margin: 40px;
-    border: 30px;
+    gap: 30px;
+    padding: 5px;
 }
-
+.fto{
+    
+    grid-area:fto ;
+    text-align: center;
+    padding: 20px;
+    color: var(--primary-color);
+}
+/*mobile fisrt*/
+/*contacto html*/
+@media screen and (max-width:576px) {
+    .contacto{
+    background-size: 576;    
+    border: 0px solid black;
+    padding: 10px 2px ;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns:auto auto auto  auto;
+    grid-template-areas:'lk info info info'
+'serv serv serv serv'
+'lista lista lista mg'
+'datos datos datos datos'
+'fto fto fto fto'}
+}
+@media screen and (max-width:576px) {
+.info{
+    
+    grid-area: info;
+    background-color: var(--secondary-color);
+    border-radius: 15px;
+    text-align: center;
+    color: var(--primary-color);
+    width:400px ;
+    height: 50px;
+    font-size: 18px;
+} 
+}
+@media screen and (max-width:576px) {
+.lk{
+    
+    display: grid;
+    grid-area: lk;
+}   
+}
+@media screen and (max-width:576px) {
+.bra{
+    
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 10px;
+}    
+}
+@media screen and (max-width:576px) {
+.dec{
+    
+    border-radius: 10px;
+    border: none;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    cursor: pointer; 
+    width: 80px;
+    height: 25px;
+}    
+}
+@media screen and (max-width:576px) {
+.serv{
+    grid-area: serv;
+    text-align: center;
+    background-color: var(--secondary-color);
+    border-radius: 15px;
+    color: var(--primary-color);
+    width: 550px;
+    height: 50px;
+    font-size: 18px;
+}    
+}
+@media screen and (max-width:576px) {
+.lista{
+    display: grid;
+    grid-area: lista;
+    color: var(--primary-color);
+    text-align: left;
+    width: 550px;
+    height: -80px;
+    size-adjust: 100px;
+    font-size: 10px;
+}    
+}
+@media screen and (max-width:576px) {
+.datos{
+    width: 550px;
+    font-size: 18px;
+}
+}
+@media screen and (max-width:576px) {
+.marg{
+    display: grid;
+    width: 500px;
+    height: -50px;
+}    
+}
+@media screen and (max-width:576px) {
+.fto{
+    grid-area:fto ;
+    text-align: center;
+    padding: 20px;
+    color: var(--primary-color);
+    width:450px ;
+    font-size: 18px; 
+}    
+}
+@media screen and (max-width:576px) {
+.icono{
+    width: 50px;
+}
+}
+/*mobile fisrt*/
+/*contacto html*/
+@media screen and (max-width:768px) {
+    .contacto{
+    background-size: 2000px;    
+    border: 0px solid black;
+    padding: 20px 2px ;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns:auto auto auto  auto;
+    grid-template-areas:'lk info info info'
+'serv serv serv serv'
+'lista lista lista mg'
+'datos datos datos datos'
+'fto fto fto fto'}
+}
+@media screen and (max-width:768px) {
+.info{
+    
+    grid-area: info;
+    background-color: var(--secondary-color);
+    border-radius: 15px;
+    text-align: center;
+    color: var(--primary-color);
+    width:600px ;
+    height: 50px;
+    font-size: 22px;
+} 
+}
+@media screen and (max-width:768px) {
+.lk{
+    
+    display: grid;
+    grid-area: lk;
+}   
+}
+@media screen and (max-width:768px) {
+.bra{
+    
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 12px;
+}    
+}
+@media screen and (max-width:768px) {
+.dec{
+    
+    border-radius: 10px;
+    border: none;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    cursor: pointer; 
+    width: 100px;
+    height: 25px;
+}    
+}
+@media screen and (max-width:768px) {
+.serv{
+    grid-area: serv;
+    text-align: center;
+    background-color: var(--secondary-color);
+    border-radius: 15px;
+    color: var(--primary-color);
+    width: 750px;
+    height: 50px;
+    font-size: 22px;
+}    
+}
+@media screen and (max-width:768px) {
+.lista{
+    display: grid;
+    grid-area: lista;
+    color: var(--primary-color);
+    text-align: left;
+    width: 750px;
+    height: -80px;
+    size-adjust: 100px;
+    font-size: 14px;
+}    
+}
+@media screen and (max-width:768px) {
+.datos{
+    width: 750px;
+    font-size: 22px;
+}
+}
+@media screen and (max-width:768px) {
+.marg{
+    display: grid;
+    width: 700px;
+    height: -50px;
+}    
+}
+@media screen and (max-width:768px) {
+.fto{
+    grid-area:fto ;
+    text-align: center;
+    padding: 20px;
+    color: var(--primary-color);
+    width:650px ;
+    font-size: 22px; 
+}    
+}
+@media screen and (max-width:768px) {
+.icono{
+    width: 50px;
+}
+}
+/*mobile fisrt*/
+/*contacto html*/
+@media screen and (max-width:992px) {
+    .contacto{
+    background-size: 992;    
+    border: 0px solid black;
+    padding: 20px 2px ;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns:auto auto auto  auto;
+    grid-template-areas:'lk info info info'
+'serv serv serv serv'
+'lista lista lista mg'
+'datos datos datos datos'
+'fto fto fto fto'}
+}
+@media screen and (max-width:992px) {
+.info{
+    
+    grid-area: info;
+    background-color: var(--secondary-color);
+    border-radius: 15px;
+    text-align: center;
+    color: var(--primary-color);
+    width:770px ;
+    height: 50px;
+    font-size: 35px;
+} 
+}
+@media screen and (max-width:992px) {
+.lk{
+    
+    display: grid;
+    grid-area: lk;
+}   
+}
+@media screen and (max-width:992px) {
+.bra{
+    
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 15px;
+}    
+}
+@media screen and (max-width:992px) {
+.dec{
+    
+    border-radius: 10px;
+    border: none;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    cursor: pointer; 
+    width: 120px;
+    height: 25px;
+}    
+}
+@media screen and (max-width:992px) {
+.serv{
+    grid-area: serv;
+    text-align: center;
+    background-color: var(--secondary-color);
+    border-radius: 15px;
+    color: var(--primary-color);
+    width: 950px;
+    height: 50px;
+    font-size: 28px;
+}    
+}
+@media screen and (max-width:992px) {
+.lista{
+    display: grid;
+    grid-area: lista;
+    color: var(--primary-color);
+    text-align: left;
+    width: 950px;
+    height: -80px;
+    size-adjust: 100px;
+    font-size: 20px;
+}    
+}
+@media screen and (max-width:992px) {
+.datos{
+    width: 950px;
+    font-size: 25px;
+    padding: 5px;
+}
+}
+@media screen and (max-width:992px) {
+.marg{
+    display: grid;
+    width: 800px;
+    height: -50px;
+}    
+}
+@media screen and (max-width:992px) {
+.fto{
+    grid-area:fto ;
+    text-align: center;
+    padding: 20px;
+    color: var(--primary-color);
+    width:750px ;
+    font-size: 25px; 
+}    
+}
+@media screen and (max-width:992px) {
+.icono{
+    width: 80px;
+}
+}
